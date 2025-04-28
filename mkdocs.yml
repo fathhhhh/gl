@@ -1,5 +1,5 @@
-site_name: My Docs
-site_url: https://gl.fathurrahman.my
+site_name: Welcome
+site_url: https://kb.fathurrahman.my
 theme: 
   name: material
   palette: 
@@ -8,8 +8,8 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Dark mode
-      primary: green
-      accent: deep purple
+      primary: black
+      accent: indigo
 
     # Light Mode
     - scheme: default
@@ -18,6 +18,3 @@ theme:
         name: Light mode
       primary: blue
       accent: deep orange
-plugins:
-  - blog
-  
