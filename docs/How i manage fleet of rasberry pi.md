@@ -1,1 +1,0 @@
-## How i manage fleet of rasberry pi

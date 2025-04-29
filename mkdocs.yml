@@ -1,12 +1,16 @@
 site_name: Welcome
+site_description: This is for documentation
 site_url: https://kb.fathurrahman.my
 theme: 
+  font:
+    text: Courier
+    code: Roboto Mono
   name: material
   palette: 
     # Dark Mode
     - scheme: slate
       toggle:
-        icon: material/weather-sunny
+        icon: material/toggle-switch
         name: Dark mode
       primary: black
       accent: indigo
@@ -14,7 +18,34 @@ theme:
     # Light Mode
     - scheme: default
       toggle:
-        icon: material/weather-night
+        icon: material/toggle-switch-off-outline
         name: Light mode
-      primary: blue
+      primary: black
       accent: deep orange
+  
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+
+nav:
+  - Home: index.md
+  - ContactUs: hello.md
+  - KB: ./blog
+
+
+plugins:
+  - search:
+  - blog:
+      # blog_dir: ./KB/
+       blog_toc: true
+       post_url_format: "{slug}"
+
+
+
+extra:
+  generator: false
+
+copyright: Copyright &copy; Kontolodon
