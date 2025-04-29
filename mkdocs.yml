@@ -23,29 +23,48 @@ theme:
       primary: black
       accent: deep orange
   
+## Navigation tab confifuration
   features:
-    - navigation.instant
-    - navigation.instant.progress
-    - navigation.tracking
+    #- navigation.instant
+    #- navigation.instant.progress
+    #- navigation.tracking
     - navigation.tabs
-    - navigation.tabs.sticky
+    - navigation.indexes
+    #- navigation.tabs.sticky
+    #- navigation.sections
+    #- navigation.expand
+    #- toc.follow
+    - toc.integrate
 
+## Nav bar sitemap
 nav:
   - Home: index.md
-  - ContactUs: hello.md
+  - Whois: hello.md
   - KB: ./blog
 
+## Coding markdown configuration
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
 plugins:
+## Searchbar
   - search:
+## Blog setup
   - blog:
-      # blog_dir: ./KB/
-       blog_toc: true
-       post_url_format: "{slug}"
+      blog_toc: 
+      post_url_format: "{slug}"
 
-
-
+      
+## Hide default mkdocs copyright
 extra:
   generator: false
 
+## Custom copyright
 copyright: Copyright &copy; Kontolodon
