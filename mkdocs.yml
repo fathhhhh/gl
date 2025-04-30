@@ -5,21 +5,22 @@ theme:
     text: Courier
     code: Roboto Mono
   logo: assets/command-palette-24.svg
+  favicon: assets/chevron-right-12.svg
   name: material
   palette: 
     - scheme: default
       toggle:
         icon: material/toggle-switch
         name: Light mode
-      primary: indigo
-      accent: indigo
+      primary: black
+      accent: red
 
     - scheme: slate
       toggle:
         icon: material/toggle-switch-off-outline
         name: Dark mode
-      primary: indigo
-      accent: indigo
+      primary: black
+      accent: red
 
   features:
     - navigation.indexes
@@ -31,7 +32,7 @@ theme:
 
 nav:
   - Home: index.md
-  - whoami: who.md
+  - Whoami: who.md
   - AWS: tags-aws.md
   - HomeLab: tags-homelab.md
   - Blog: blog
