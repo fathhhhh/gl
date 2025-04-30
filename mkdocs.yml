@@ -4,7 +4,7 @@ theme:
   font:
     text: Courier
     code: Roboto Mono
-  logo: assets/command-palette-24.svg
+  logo: assets/code.png
   favicon: assets/chevron-right-12.svg
   name: material
   palette: 
