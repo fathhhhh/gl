@@ -24,6 +24,10 @@ theme:
   features:
     - navigation.indexes
     - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    # - toc.integrate
+    - navigation.top
 
 nav:
   - Home: index.md
