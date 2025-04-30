@@ -1,68 +1,47 @@
-site_name: Welcome
-site_description: This is for documentation
+site_name: Fathurrahman Azman
 site_url: https://kb.fathurrahman.my
-theme: 
+theme:
   font:
     text: Courier
     code: Roboto Mono
+  logo: assets/command-palette-24.svg
   name: material
   palette: 
-    # Dark Mode
-    - scheme: slate
-      toggle:
-        icon: material/toggle-switch
-        name: Dark mode
-      primary: black
-      accent: indigo
-
-    # Light Mode
     - scheme: default
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/toggle-switch
         name: Light mode
-      primary: black
-      accent: deep orange
-  
-## Navigation tab confifuration
-  features:
-    #- navigation.instant
-    #- navigation.instant.progress
-    #- navigation.tracking
-    - navigation.tabs
-    - navigation.indexes
-    #- navigation.tabs.sticky
-    #- navigation.sections
-    #- navigation.expand
-    #- toc.follow
-    - toc.integrate
+      primary: indigo
+      accent: indigo
 
-## Nav bar sitemap
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Dark mode
+      primary: indigo
+      accent: indigo
+
+  features:
+    - navigation.indexes
+    - navigation.tabs
+
 nav:
   - Home: index.md
-  - Whois: hello.md
-  - KB: ./blog
-
-## Coding markdown configuration
-markdown_extensions:
-  - admonition
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
+  - whoami: who.md
+  - AWS:
+      - 'Tag': tags-aws.md
+  - HomeLab: 
+      - 'Tag': tags-homelab.md
+  - Blog: blog
 
 plugins:
-## Searchbar
-  - search:
-## Blog setup
   - blog:
-      blog_toc: 
-      post_url_format: "{slug}"
+      categories: true
+  - search:
+  - tags
 
-      
-## Hide default mkdocs copyright
+
+
 extra:
   generator: false
 

@@ -1,13 +1,11 @@
 ---
-title: Post2
+title: homelab1
 date: 2023-04-11
 categories:
-    - aws
+    - homelab
 tags:
-    - aws
+    - homelab
 ---
 
 <!-- more -->
-
-
-aegsdgasegr
+fsdgfsdegd
