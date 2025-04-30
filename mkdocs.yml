@@ -28,10 +28,8 @@ theme:
 nav:
   - Home: index.md
   - whoami: who.md
-  - AWS:
-      - 'Tag': tags-aws.md
-  - HomeLab: 
-      - 'Tag': tags-homelab.md
+  - AWS: tags-aws.md
+  - HomeLab: tags-homelab.md
   - Blog: blog
 
 plugins:
